@@ -59,6 +59,7 @@
 
 ## stash
 다른 branch로 checkout을 해야 하는데 아직 현재 branch에서 작입이 끝나지 않은 경우에 사용하여 작업중이던 파일을 임시로 저장해두고 현재 brnach의 상태를 마지막 commit상태로 초기화 할 수 있다
+
 <code>git stash</code>
 * 현재 branch의 작업내용이 저장되고 마지막 commit상태로 초기화하는 명령어
 
