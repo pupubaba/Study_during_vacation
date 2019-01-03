@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>world</h1>
+    <ul style="list-style-type: none;">
+    {% for n in post %}
+        <li>제목 : {{ n.title }}</li>
+        <hr>
+        <li>내용 : {{ n.text }}</li>
+        <li>작성자 : {{ n.user }}</li>
+        <br>
+        <br>
+    {% endfor %}
+</body>
+
+</html>
