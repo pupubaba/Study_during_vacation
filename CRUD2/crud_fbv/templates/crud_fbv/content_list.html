@@ -1,0 +1,26 @@
+<h1>Contents</h1>
+
+<table border="1">
+<thead>
+    <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th>View</th>
+    <th>Edit</th>
+    <th>Delete</th>
+    </tr>
+</thead>
+<tbody>
+    {% for content in contents %}
+    <tr>
+    <td>{{ content.title }}</td>
+    <td>{{ content.text }}</td>
+    <td><a href="{% url "content_view" content.id %}">view</a></td>
+    <td><a href="{% url "content_edit" content.id %}">edit</a></td>
+    <td><a href="{% url "content_delete" content.id %}">delete</a></td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+
+<a href="{% url "content_new" %}">New</a>
